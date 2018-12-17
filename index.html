@@ -22,8 +22,11 @@
         </ul>
     </nav>
     <div id="main">
-    <section>
+    <section class="intro">
         <h2 id="intro">Intro</h2>
+        <img src="image/1.jpg" id="slide1" width="33%" height="350">
+        <img src="image/a.jpg" id="slide2" width="33%" height="350">
+        <img src="image/01.jpg"id="slide3" width="33%" height="350">
     </section>
     <section>
         <h2 id="laguage">programming language</h2>
@@ -52,5 +55,22 @@
           }
         });
       } );    
+</script>
+<!--사진 슬라이드-->
+<script>
+    var step =1;
+function slide(){
+    document.getElementById("slide1").src = "image/"+step+".jpg";
+    document.getElementById("slide2").src = "image/0"+step+".jpg";
+    document.getElementById("slide3").src = "image/a"+step+".jpg";
+    if(step < 3){
+        step++;
+        
+    }else{
+        step = 1;
+    }
+    setTimeout("slide()",2000);
+}
+slide();
 </script>
 </html>
