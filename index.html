@@ -24,9 +24,9 @@
     <div id="main">
     <section class="intro">
         <h2 id="intro">Intro</h2>
-        <img src="image/1.jpg" id="slide1" width="33%" height="350">
-        <img src="image/a.jpg" id="slide2" width="33%" height="350">
-        <img src="image/01.jpg"id="slide3" width="33%" height="350">
+        <img src="" id="slide1" width="33%" height="350">
+        <img src="" id="slide2" width="33%" height="350">
+        <img src=""id="slide3" width="33%" height="350">
     </section>
     <section>
         <h2 id="laguage">programming language</h2>
@@ -60,13 +60,22 @@
 <script>
     var step =1;
 function slide(){
-    document.getElementById("slide1").src = "image/"+step+".jpg";
-    document.getElementById("slide2").src = "image/0"+step+".jpg";
-    document.getElementById("slide3").src = "image/a"+step+".jpg";
-    if(step < 3){
-        step++;
-        
-    }else{
+    if(step==1){
+        document.getElementById("slide1").src=
+          "https://user-images.githubusercontent.com/38098094/50089303-d1118d00-0248-11e9-8258-e51483a927fd.JPG";
+        document.getElementById("slide2").src = "https://user-images.githubusercontent.com/38098094/50089803-2ac68700-024a-11e9-955b-67e78824de03.JPG";
+        document.getElementById("slide3").src = "https://user-images.githubusercontent.com/38098094/50089904-75480380-024a-11e9-9689-bcfd9c092872.jpg";
+        step++;        
+    }else if(step==2){
+        document.getElementById("slide1").src = "https://user-images.githubusercontent.com/38098094/50089521-60b73b80-0249-11e9-8ab2-9cfcaa7c11ca.JPG";
+        document.getElementById("slide2").src = "https://user-images.githubusercontent.com/38098094/50089838-416cde00-024a-11e9-9555-35b280518b56.JPG";
+        document.getElementById("slide3").src = "https://user-images.githubusercontent.com/38098094/50089925-842eb600-024a-11e9-9e83-6f77c6d90a99.JPG";
+        step++;        
+    }
+    else{
+         document.getElementById("slide1").src =  "https://user-images.githubusercontent.com/38098094/50089562-7cbadd00-0249-11e9-9db2-fc2dcdb39be1.JPG";
+        document.getElementById("slide2").src = "https://user-images.githubusercontent.com/38098094/50089856-534e8100-024a-11e9-97fa-95eae3bad923.JPG";
+        document.getElementById("slide3").src = "https://user-images.githubusercontent.com/38098094/50089944-927cd200-024a-11e9-83de-cf51d9b4100a.JPG";
         step = 1;
     }
     setTimeout("slide()",2000);

@@ -55,6 +55,7 @@
         }
         /*메뉴 내부 a태그*/
         li a{
+            font-size: 1.3em;
             display: block;
             color: white;
             text-align: center;
