@@ -1,0 +1,91 @@
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+           margin: 0;
+           padding: 0;
+           border: 0;
+           font-size: 100%;
+           font: inherit;
+           vertical-align: baseline;
+           font-family: 'ZCOOL QingKe HuangYou', cursive;
+        }
+/****************************************************************/
+        /*헤드 부분 */
+        header{
+            background-color: black;
+            height: 250px;
+        }
+        /*포트폴리오 로고*/
+        #logo{
+            font-size: 130px;
+            color: aliceblue;
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        /*로고 하위 설명*/
+        header>p{
+            opacity: 0.4;
+            margin-top: 30px;
+            font-size: 30px;
+             color: darkgrey;
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+              margin-left: 43px;
+        }
+/****************************************************************/
+        /*메뉴 부분*/
+        nav{
+            width: 100%;
+             border:9px solid black;
+             
+        }
+        /*메뉴 목록*/
+        nav>ul{
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+        }
+        /*메뉴 목록 개체*/
+        li{
+            float:left;
+            width: 20%;
+        }
+        /*메뉴 내부 a태그*/
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 18px 16px;
+            text-decoration: none;
+        }
+        /*메뉴 내부 a태그 hover시*/
+        li a:hover {
+            background-color: #111;
+        }
+        /*메뉴 고정*/
+        .jbFixed {
+        position: fixed;
+        top: 0px;
+      }
+/****************************************************************/
+        #main{
+            
+        }
+        #intro{
+            font-size: 80px;
+            height: 500px;
+        }
+        #laguage{
+             font-size: 80px;
+            height: 500px;
+        }
+        #work{
+            font-size: 80px;
+            height: 500px;
+        }
+        #career{
+            font-size: 80px;
+            height: 500px;
+        }
+/****************************************************************/

@@ -4,83 +4,8 @@
     <meta charset="UTF-8">
     <title>joun's portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
-    <style>
-        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-
-           margin: 0;
-           padding: 0;
-           border: 0;
-           font-size: 100%;
-           font: inherit;
-           vertical-align: baseline;
-           font-family: 'ZCOOL QingKe HuangYou', cursive;
-        }
-        header{
-            background-color: black;
-            height: 250px;
-        }
-        #logo{
-            font-size: 130px;
-            color: aliceblue;
-            font-family: 'ZCOOL QingKe HuangYou', cursive;
-            margin-left: 30px;
-            margin-top: 30px;
-        }
-        header>p{
-            opacity: 0.4;
-            margin-top: 30px;
-            font-size: 30px;
-             color: darkgrey;
-            font-family: 'ZCOOL QingKe HuangYou', cursive;
-              margin-left: 43px;
-        }
-        nav{
-            position: fixed; 
-            width: 100%;
-             border:9px solid black;
-             
-        }
-        nav>ul{
-            display: fixed;
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-              background-color: #333;
-        }
-        li{
-            float:left;
-            width: 20%;
-        }
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 18px 16px;
-            text-decoration: none;
-        }
-        li a:hover {
-            background-color: #111;
-        }
-        #intro{
-            font-size: 80px;
-            height: 500px;
-        }
-        #laguage{
-             font-size: 80px;
-            height: 500px;
-        }
-        #work{
-            font-size: 80px;
-            height: 500px;
-        }
-        #career{
-            font-size: 80px;
-            height: 500px;
-        }
-        #main{
-        }
-    </style>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel= "stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
@@ -114,4 +39,18 @@
         phone : 010-9379-7201
     </footer>
 </body>
+<!--메뉴바 상단 고정 코드-->
+<script>
+    $( document ).ready( function() {
+        var jbOffset = $( 'nav' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() > jbOffset.top ) {
+            $( 'nav' ).addClass( 'jbFixed' );
+          }
+          else {
+            $( 'nav' ).removeClass( 'jbFixed' );
+          }
+        });
+      } );    
+</script>
 </html>
