@@ -110,16 +110,20 @@
             width: 47%;
             height: 90%;
         }
-#profile > h2{
-    font-size: 40px;
-    padding: 20px;
-    text-align: left;
-}
+        #profile > h2{
+            font-size: 40px;
+            padding: 20px;
+            text-align: left;
+        }
         #selfintro{
             margin-left: 40px;
             font-size: 25px;
         }
 /****************************************************************/
+        .skill{
+            background-color: rgba(192,192,192,0.3);
+            padding: 15px;
+        }
         #skill{
             padding: 30px;
              font-size: 80px;
@@ -127,7 +131,7 @@
         #skilltap{
              display: inline-block; 
             width: 27%;
-            height: 300px;
+            height: 340px;
         }
         #skilltap > button{
             width: 100%;
@@ -137,24 +141,53 @@
             color: aliceblue;
             background-color: #333;
         }
-         .check{
-            background-color: red;
-        }
         #skilltap > button:hover {
             background-color: #111;
         }
-        #skilltap > button:activ{
-            background-color: #111;
-        }
         .content{
+            background-color:white;
+            padding: 20px;
             border: 2px solid black;
             display: none; 
-            width:70%;
+            width:66%;
             height: 300px;
             vertical-align: top;
         }
         #web{
             display: inline-block;
+        }
+        #inf{
+            word-spacing: 5px;
+            display: inline-block;
+            width: 40%;
+            height: 100%;
+        }
+        #confidant{
+            vertical-align: top;
+            word-spacing: 5px;
+            display: inline-block;
+            width: 55%;
+            height: 100%;
+        }
+        #myongji{
+            vertical-align: top;
+            display: inline-block;
+            width: 35%;
+            height: 90%;
+        }
+        #ccc{
+             vertical-align: top;
+            display: inline-block;
+            width: 42%;
+            height: 90%;
+        }
+        #cimg{
+            vertical-align: top;
+            word-spacing: 5px;
+            display: inline-block;
+            width: 50%;
+            height: 90%;
+            padding: 10px;
         }
 /****************************************************************/
         #work{
