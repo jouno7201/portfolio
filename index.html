@@ -51,10 +51,10 @@
     <section class = "skill">
         <h2 id="skill">Skill</h2>
         <div id="skilltap">
-        <button>Web</button>
-        <button>Java</button>
-        <button>C++</button>
-        <button>C</button>
+        <button onclick="changetap('web')">Web</button>
+        <button onclick="changetap('java')">Java</button>
+        <button onclick="changetap('cpp')">C++</button>
+        <button onclick="changetap('C')">C</button>
         </div>
         <div id="web" class="content">web</div>
         <div id="java" class="content">java</div>
@@ -112,5 +112,34 @@ function slide(){
     setTimeout("slide()",2000);
 }
 slide();
+</script>
+<!--skill tap화면 생성 코드-->
+<script>
+var contents =document.getElementsByClassName("content");
+var taped = document.getElementById("skilltap").querySelectorAll("button");
+taped[0].style.borderRight = "5px solid red";
+    function changetap(str){
+        
+        for(var i=0;i<taped.length;i++){
+            taped[i].style.borderRight = "";
+            contents[i].style.display="none";
+        }
+        
+        if(str == "web"){
+            taped[0].style.borderRight = "5px solid red";
+            contents[0].style.display="inline-block";
+        }else if(str == "java"){
+              taped[1].style.borderRight = "5px solid red";
+            contents[1].style.display="inline-block";
+        }else if(str == "cpp"){
+             taped[2].style.borderRight = "5px solid red";
+            contents[2].style.display="inline-block";
+        }else{
+            taped[3].style.borderRight = "5px solid red";
+            contents[3].style.display="inline-block";
+        }
+    }
+    
+    
 </script>
 </html>

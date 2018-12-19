@@ -136,6 +136,9 @@
             color: aliceblue;
             background-color: #333;
         }
+         .check{
+            background-color: red;
+        }
         #skilltap > button:hover {
             background-color: #111;
         }
