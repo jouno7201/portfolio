@@ -72,9 +72,7 @@
         top: 0px;
       }
 /****************************************************************/
-        #main{
-            
-        }
+        /*인트로 부분*/
         .intro{
             border: 2px solid black;
             background-color: rgba(192,192,192,0.3);
@@ -83,11 +81,78 @@
             font-size: 80px;
             height: 80px;
             margin-left: 30px;
+             margin-bottom: 0.3em;
         }
-        #laguage{
+        #introwrap{
+            padding: 20px;
+             display: inline-block;
+            width: 47%;
+            height: 400px;
+            word-spacing: 5px;
+             vertical-align: top;
+        }
+        #introimg{
+             display: inline-block;
+            width:48%;
+            height: 440px;
+             vertical-align: top;
+        }
+        #faceimg{
+            display: inline-block;
+            padding: 10px;
+            width: 35%;
+            height: 42%;
+        }
+        #profile{
+            vertical-align: top;
+            display: inline-block;
+              padding: 10px;
+            width: 47%;
+            height: 90%;
+        }
+#profile > h2{
+    font-size: 40px;
+    padding: 20px;
+    text-align: left;
+}
+        #selfintro{
+            margin-left: 40px;
+            font-size: 25px;
+        }
+/****************************************************************/
+        #skill{
              font-size: 80px;
-            height: 500px;
         }
+        #skilltap{
+             display: inline-block; 
+            width: 27%;
+            height: 300px;
+        }
+        #skilltap > button{
+            width: 100%;
+            height: 25%;
+            font-size: 30px;
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+            color: aliceblue;
+            background-color: #333;
+        }
+        #skilltap > button:hover {
+            background-color: #111;
+        }
+        #skilltap > button:activ{
+            background-color: #111;
+        }
+        .content{
+            border: 2px solid black;
+            display: none; 
+            width:70%;
+            height: 300px;
+            vertical-align: top;
+        }
+        #web{
+            display: inline-block;
+        }
+/****************************************************************/
         #work{
             font-size: 80px;
             height: 500px;
