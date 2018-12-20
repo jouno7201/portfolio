@@ -1,40 +1,47 @@
  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
-           margin: 0;
-           padding: 0;
-           border: 0;
-           font-size: 100%;
-           font: inherit;
-           vertical-align: baseline;
-           font-family: 'ZCOOL QingKe HuangYou', cursive;
-        }
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+body{
+    /*display: inline-block;*/
+    width: 1024px;
+    margin: 0 auto;
+}
+#wrap{
+    margin: 0 auto;
+}
 /****************************************************************/
-        /*헤드 부분 */
-        header{
-            background-color: black;
-            height: 250px;
-        }
-        /*포트폴리오 로고*/
-        #logo{
-            font-size: 130px;
-            color: aliceblue;
-            font-family: 'ZCOOL QingKe HuangYou', cursive;
-            margin-left: 30px;
-            margin-top: 30px;
-        }
-        /*로고 하위 설명*/
-        header>p{
-            opacity: 0.4;
-            margin-top: 30px;
-            font-size: 30px;
-             color: darkgrey;
-            font-family: 'ZCOOL QingKe HuangYou', cursive;
-              margin-left: 43px;
-        }
+/*헤드 부분 */
+header{
+    background-color: black;
+    height: 250px;
+}
+/*포트폴리오 로고*/
+#logo{
+    font-size: 130px;
+    color: aliceblue;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    margin-left: 30px;
+}
+/*로고 하위 설명*/
+header>p{
+    opacity: 0.4;
+    margin-top: 30px;
+    font-size: 30px;
+    color: darkgrey;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    margin-left: 43px;
+}
 /****************************************************************/
         /*메뉴 부분*/
         nav{
-            width: 100%;
+            width: 1008px;
              border:9px solid black;
              
         }
@@ -55,7 +62,7 @@
         }
         /*메뉴 내부 a태그*/
         li a{
-            font-size: 1.3em;
+            font-size: 25px;
             display: block;
             color: white;
             text-align: center;
@@ -68,8 +75,9 @@
         }
         /*메뉴 고정*/
         .jbFixed {
-        position: fixed;
-        top: 0px;
+           width: 1008px;
+            position: fixed;
+            top: 0px;
       }
 /****************************************************************/
         /*인트로 부분*/
@@ -81,20 +89,21 @@
             font-size: 80px;
             height: 80px;
             margin-left: 30px;
-             margin-bottom: 0.3em;
+            margin-bottom: 10px;
         }
         #introwrap{
             padding: 20px;
              display: inline-block;
-            width: 47%;
-            height: 400px;
+            width: 480px;
+            height: 380px;
             word-spacing: 5px;
-             vertical-align: top;
+            vertical-align: top;
         }
         #introimg{
+            margin-top: 20px;
              display: inline-block;
-            width:48%;
-            height: 440px;
+            width:480px;
+            height: 400px;
              vertical-align: top;
         }
         #faceimg{
@@ -120,9 +129,10 @@
             font-size: 25px;
         }
 /****************************************************************/
-        .skill{
+         .skill{
             background-color: rgba(192,192,192,0.3);
             padding: 15px;
+             border: 2px solid black;
         }
         #skill{
             padding: 30px;
@@ -161,6 +171,7 @@
             display: inline-block;
             width: 40%;
             height: 100%;
+            margin-right:26px;
         }
         #confidant{
             vertical-align: top;
@@ -170,9 +181,10 @@
             height: 100%;
         }
         #myongji{
+             margin-right:28px;
             vertical-align: top;
             display: inline-block;
-            width: 35%;
+            width: 32%;
             height: 90%;
         }
         #ccc{
@@ -180,6 +192,7 @@
             display: inline-block;
             width: 42%;
             height: 90%;
+             margin-right:26px;
         }
         #cimg{
             vertical-align: top;
@@ -190,12 +203,34 @@
             padding: 10px;
         }
 /****************************************************************/
-        #work{
+        #workwrap{
+             background-color: rgba(192,192,192,0.3);
+            padding: 15px;
+             border: 2px solid black;
+        }
+         #work{
             font-size: 80px;
-            height: 500px;
+            padding: 15px;
+        }
+        #javaR{
+            height: 350px;
+            width: 500px;
+            font-size: 25px;
+            padding: 20px;
+        }
+        #unity{
+             height: 350px;
+            width: 500px;
+            font-size: 25px;
+            padding: 20px;
+        }
+/****************************************************************/
+         #careerwrap{
+             background-color: rgba(192,192,192,0.3);
+            padding: 15px;
+             border: 2px solid black;
         }
         #career{
             font-size: 80px;
-            height: 500px;
-        }
-/****************************************************************/
+            padding: 15px;
+        }  
