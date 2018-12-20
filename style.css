@@ -229,8 +229,22 @@ header>p{
              background-color: rgba(192,192,192,0.3);
             padding: 15px;
              border: 2px solid black;
+             height: 400px;
         }
         #career{
             font-size: 80px;
             padding: 15px;
         }  
+/****************************************************************/
+        footer{
+            border: 2px solid black;
+            text-align: center;
+            height: 300px;
+            font-family: "fontello";
+            font-size: 20px;
+        }
+        #contact{
+            font-size: 80px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
